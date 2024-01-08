@@ -1,0 +1,47 @@
+[2024-01-08T11:19:59.151+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_dag.load_data manual__2024-01-08T10:19:53.306238+00:00 [queued]>
+[2024-01-08T11:19:59.155+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_dag.load_data manual__2024-01-08T10:19:53.306238+00:00 [queued]>
+[2024-01-08T11:19:59.155+0100] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-01-08T11:19:59.170+0100] {taskinstance.py:1382} INFO - Executing <Task(SnowflakeOperator): load_data> on 2024-01-08 10:19:53.306238+00:00
+[2024-01-08T11:19:59.173+0100] {standard_task_runner.py:57} INFO - Started process 83076 to run task
+[2024-01-08T11:19:59.174+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'load_data_dag', 'load_data', 'manual__2024-01-08T10:19:53.306238+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/load_data.py', '--cfg-path', '/tmp/tmpds2pcf9u']
+[2024-01-08T11:19:59.175+0100] {standard_task_runner.py:85} INFO - Job 16: Subtask load_data
+[2024-01-08T11:19:59.196+0100] {task_command.py:416} INFO - Running <TaskInstance: load_data_dag.load_data manual__2024-01-08T10:19:53.306238+00:00 [running]> on host DESKTOP-9ILQL7F.
+[2024-01-08T11:19:59.233+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='load_data_dag' AIRFLOW_CTX_TASK_ID='load_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-08T10:19:53.306238+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-08T10:19:53.306238+00:00'
+[2024-01-08T11:19:59.233+0100] {sql.py:276} INFO - Executing: CALL TASK_8.STAGING_SCHEMA.LOAD_SOURCE_DATA_TO_STAGING();
+CALL TASK_8.CLEANCING_SCHEMA.LOAD_SOURCE_TO_CLEANCING_LAYER();
+CALL TASK_8.CLEANCING_SCHEMA.LOAD_WRK_TABLES();
+CALL TASK_8.CLEANCING_SCHEMA.UPDATE_DIM_TABLES();
+CALL TASK_8.CLEANCING_SCHEMA.LOAD_FCT_TABLES();
+[2024-01-08T11:19:59.236+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:19:59.397+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:19:59.397+0100] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.12, Platform: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[2024-01-08T11:19:59.398+0100] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-01-08T11:19:59.738+0100] {cursor.py:1028} INFO - query: [ALTER SESSION SET autocommit=False]
+[2024-01-08T11:19:59.844+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:19:59.844+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:19:59.845+0100] {sql.py:450} INFO - Running statement: CALL TASK_8.STAGING_SCHEMA.LOAD_SOURCE_DATA_TO_STAGING();, parameters: None
+[2024-01-08T11:19:59.845+0100] {cursor.py:1028} INFO - query: [CALL TASK_8.STAGING_SCHEMA.LOAD_SOURCE_DATA_TO_STAGING();]
+[2024-01-08T11:20:02.917+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:20:02.948+0100] {connection.py:718} INFO - closed
+[2024-01-08T11:20:03.008+0100] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2024-01-08T11:20:03.088+0100] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 282, in execute
+    output = hook.run(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/hooks/snowflake.py", line 388, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/hooks/sql.py", line 455, in _run_command
+    cur.execute(sql_statement)
+  File "/home/igor/.venv/lib/python3.10/site-packages/snowflake/connector/cursor.py", line 1132, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/home/igor/.venv/lib/python3.10/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/home/igor/.venv/lib/python3.10/site-packages/snowflake/connector/errors.py", line 345, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 090232 (25000): 01b187ac-0000-50db-0000-00003fbdb169: Uncaught exception of type 'STATEMENT_ERROR' on line 5 at position 4 : Stored procedure execution error: Scoped transaction started in stored procedure is incomplete and it was rolled back.
+[2024-01-08T11:20:03.091+0100] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=load_data_dag, task_id=load_data, execution_date=20240108T101953, start_date=20240108T101959, end_date=20240108T102003
+[2024-01-08T11:20:03.101+0100] {standard_task_runner.py:104} ERROR - Failed to execute job 16 for task load_data (090232 (25000): 01b187ac-0000-50db-0000-00003fbdb169: Uncaught exception of type 'STATEMENT_ERROR' on line 5 at position 4 : Stored procedure execution error: Scoped transaction started in stored procedure is incomplete and it was rolled back.; 83076)
+[2024-01-08T11:20:03.156+0100] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-08T11:20:03.165+0100] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

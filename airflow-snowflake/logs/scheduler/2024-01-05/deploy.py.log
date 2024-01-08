@@ -1,0 +1,1494 @@
+[2024-01-05T20:28:35.219+0100] {processor.py:157} INFO - Started process (PID=74102) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:28:35.221+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T20:28:35.228+0100] {logging_mixin.py:154} INFO - [2024-01-05T20:28:35.224+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:28:35.314+0100] {logging_mixin.py:154} INFO - [2024-01-05T20:28:35.299+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T20:28:35.315+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:28:35.335+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.119 seconds
+[2024-01-05T20:29:05.881+0100] {processor.py:157} INFO - Started process (PID=74109) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:29:05.882+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T20:29:05.886+0100] {logging_mixin.py:154} INFO - [2024-01-05T20:29:05.885+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:29:05.918+0100] {logging_mixin.py:154} INFO - [2024-01-05T20:29:05.917+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T20:29:05.918+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:29:05.937+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.057 seconds
+[2024-01-05T20:29:35.992+0100] {processor.py:157} INFO - Started process (PID=74113) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:29:35.995+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T20:29:35.997+0100] {logging_mixin.py:154} INFO - [2024-01-05T20:29:35.997+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:29:36.027+0100] {logging_mixin.py:154} INFO - [2024-01-05T20:29:36.026+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T20:29:36.028+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:29:36.042+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.052 seconds
+[2024-01-05T20:59:55.462+0100] {processor.py:157} INFO - Started process (PID=74128) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:59:55.466+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T20:59:55.500+0100] {logging_mixin.py:154} INFO - [2024-01-05T20:59:55.499+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:59:55.691+0100] {logging_mixin.py:154} INFO - [2024-01-05T20:59:55.688+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T20:59:55.691+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T20:59:55.715+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.268 seconds
+[2024-01-05T21:00:25.839+0100] {processor.py:157} INFO - Started process (PID=74187) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:00:25.840+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:00:25.844+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:00:25.844+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:00:25.880+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:00:25.878+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:00:25.880+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:00:25.902+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.066 seconds
+[2024-01-05T21:00:55.998+0100] {processor.py:157} INFO - Started process (PID=74196) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:00:56.010+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:00:56.012+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:00:56.012+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:00:56.037+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:00:56.036+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:00:56.038+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:00:56.058+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.061 seconds
+[2024-01-05T21:01:26.155+0100] {processor.py:157} INFO - Started process (PID=74206) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:01:26.157+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:01:26.159+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:01:26.159+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:01:26.186+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:01:26.184+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:01:26.187+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:01:26.204+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.051 seconds
+[2024-01-05T21:01:56.315+0100] {processor.py:157} INFO - Started process (PID=74215) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:01:56.343+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:01:56.345+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:01:56.345+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:01:56.371+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:01:56.369+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:01:56.371+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:01:56.387+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.074 seconds
+[2024-01-05T21:02:26.485+0100] {processor.py:157} INFO - Started process (PID=74223) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:02:26.512+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:02:26.515+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:02:26.515+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:02:26.540+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:02:26.539+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:02:26.541+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:02:26.559+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.076 seconds
+[2024-01-05T21:02:56.642+0100] {processor.py:157} INFO - Started process (PID=74232) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:02:56.660+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:02:56.662+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:02:56.661+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:02:56.688+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:02:56.686+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:02:56.688+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:02:56.703+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.063 seconds
+[2024-01-05T21:03:26.799+0100] {processor.py:157} INFO - Started process (PID=74234) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:03:26.826+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:03:26.828+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:03:26.828+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:03:26.853+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:03:26.852+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:03:26.853+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:03:26.868+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.071 seconds
+[2024-01-05T21:03:56.913+0100] {processor.py:157} INFO - Started process (PID=74243) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:03:56.914+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:03:56.916+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:03:56.916+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:03:56.946+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:03:56.944+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:03:56.946+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:03:56.963+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.052 seconds
+[2024-01-05T21:04:27.072+0100] {processor.py:157} INFO - Started process (PID=74251) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:04:27.099+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:04:27.102+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:04:27.101+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:04:27.126+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:04:27.125+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:04:27.127+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:04:27.144+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.074 seconds
+[2024-01-05T21:04:57.239+0100] {processor.py:157} INFO - Started process (PID=74259) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:04:57.244+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:04:57.246+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:04:57.246+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:04:57.280+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:04:57.279+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:04:57.281+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:04:57.303+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.067 seconds
+[2024-01-05T21:05:27.404+0100] {processor.py:157} INFO - Started process (PID=74272) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:05:27.413+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:05:27.415+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:05:27.415+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:05:27.441+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:05:27.439+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:05:27.441+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:05:27.457+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.056 seconds
+[2024-01-05T21:05:57.564+0100] {processor.py:157} INFO - Started process (PID=74279) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:05:57.592+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:05:57.594+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:05:57.594+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:05:57.619+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:05:57.618+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:05:57.620+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:05:57.636+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.075 seconds
+[2024-01-05T21:06:27.720+0100] {processor.py:157} INFO - Started process (PID=74289) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:06:27.739+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:06:27.741+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:06:27.741+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:06:27.764+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:06:27.763+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:06:27.764+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:06:27.783+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.065 seconds
+[2024-01-05T21:06:57.880+0100] {processor.py:157} INFO - Started process (PID=74290) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:06:57.907+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:06:57.909+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:06:57.909+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:06:57.935+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:06:57.934+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:06:57.935+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:06:57.952+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.075 seconds
+[2024-01-05T21:07:28.038+0100] {processor.py:157} INFO - Started process (PID=74298) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:07:28.039+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:07:28.041+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:07:28.041+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:07:28.067+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:07:28.066+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:07:28.067+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:07:28.082+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.045 seconds
+[2024-01-05T21:07:58.200+0100] {processor.py:157} INFO - Started process (PID=74310) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:07:58.228+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:07:58.233+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:07:58.233+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:07:58.264+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:07:58.263+0100] {dagbag.py:346} ERROR - Failed to import: /home/igor/airflow-snowflake/dags/deploy.py
+Traceback (most recent call last):
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/igor/airflow-snowflake/dags/deploy.py", line 34, in <module>
+    snowflake_op_with_params = SnowflakeOperator(
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/snowflake/operators/snowflake.py", line 106, in __init__
+    super().__init__(conn_id=snowflake_conn_id, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 242, in __init__
+    super().__init__(conn_id=conn_id, database=database, **kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/providers/common/sql/operators/sql.py", line 139, in __init__
+    super().__init__(**kwargs)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 930, in __init__
+    self.dag = dag
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1045, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 1106, in dag
+    dag.add_task(self)
+  File "/home/igor/.venv/lib/python3.10/site-packages/airflow/models/dag.py", line 2556, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2024-01-05T21:07:58.264+0100] {processor.py:841} WARNING - No viable dags retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:07:58.283+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.086 seconds
+[2024-01-05T21:08:21.657+0100] {processor.py:157} INFO - Started process (PID=74320) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:08:21.658+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:08:21.660+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:21.660+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:08:21.708+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:08:21.853+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:21.853+0100] {manager.py:499} INFO - Created Permission View: %s
+[2024-01-05T21:08:21.864+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:21.864+0100] {manager.py:499} INFO - Created Permission View: %s
+[2024-01-05T21:08:21.874+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:21.874+0100] {manager.py:499} INFO - Created Permission View: %s
+[2024-01-05T21:08:21.875+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:21.874+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:08:21.882+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:21.882+0100] {dag.py:2963} INFO - Creating ORM DAG for deploy_dag
+[2024-01-05T21:08:21.891+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:21.890+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to 2024-01-04T00:00:00+00:00, run_after=2024-01-04T00:00:00+00:00
+[2024-01-05T21:08:21.925+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.270 seconds
+[2024-01-05T21:08:23.005+0100] {processor.py:157} INFO - Started process (PID=74321) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:08:23.006+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:08:23.008+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:23.008+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:08:23.052+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:08:23.059+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:23.059+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:08:23.078+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:23.077+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to 2024-01-04T00:00:00+00:00, run_after=2024-01-04T00:00:00+00:00
+[2024-01-05T21:08:23.107+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.107 seconds
+[2024-01-05T21:08:53.931+0100] {processor.py:157} INFO - Started process (PID=74355) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:08:53.959+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:08:53.961+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:53.961+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:08:53.987+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:08:54.000+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:53.999+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:08:54.011+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:08:54.011+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:08:54.027+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.098 seconds
+[2024-01-05T21:09:24.212+0100] {processor.py:157} INFO - Started process (PID=74365) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:09:24.240+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:09:24.242+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:09:24.242+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:09:24.267+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:09:24.280+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:09:24.280+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:09:24.291+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:09:24.291+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:09:24.315+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.105 seconds
+[2024-01-05T21:09:54.506+0100] {processor.py:157} INFO - Started process (PID=74366) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:09:54.533+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:09:54.535+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:09:54.535+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:09:54.562+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:09:54.576+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:09:54.575+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:09:54.586+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:09:54.586+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:09:54.600+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.097 seconds
+[2024-01-05T21:10:24.748+0100] {processor.py:157} INFO - Started process (PID=74385) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:10:24.775+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:10:24.778+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:10:24.778+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:10:24.818+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:10:24.838+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:10:24.837+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:10:24.856+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:10:24.856+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:10:24.884+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.139 seconds
+[2024-01-05T21:10:55.033+0100] {processor.py:157} INFO - Started process (PID=74396) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:10:55.034+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:10:55.037+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:10:55.037+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:10:55.075+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:10:55.091+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:10:55.091+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:10:55.104+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:10:55.104+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:10:55.122+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.119 seconds
+[2024-01-05T21:11:25.641+0100] {processor.py:157} INFO - Started process (PID=74431) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:11:25.642+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:11:25.645+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:11:25.644+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:11:25.670+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:11:25.682+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:11:25.682+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:11:25.692+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:11:25.692+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:11:25.708+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.069 seconds
+[2024-01-05T21:11:55.884+0100] {processor.py:157} INFO - Started process (PID=74438) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:11:55.891+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:11:55.893+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:11:55.893+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:11:55.919+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:11:55.931+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:11:55.930+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:11:55.941+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:11:55.940+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:11:55.958+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.076 seconds
+[2024-01-05T21:12:26.160+0100] {processor.py:157} INFO - Started process (PID=74448) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:12:26.187+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:12:26.189+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:12:26.189+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:12:26.214+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:12:26.226+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:12:26.225+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:12:26.237+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:12:26.237+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:12:26.254+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.097 seconds
+[2024-01-05T21:12:57.191+0100] {processor.py:157} INFO - Started process (PID=74455) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:12:57.218+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:12:57.220+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:12:57.220+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:12:57.246+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:12:57.258+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:12:57.258+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:12:57.270+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:12:57.270+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:12:57.285+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.097 seconds
+[2024-01-05T21:13:27.846+0100] {processor.py:157} INFO - Started process (PID=74457) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:13:27.874+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:13:27.877+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:13:27.876+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:13:27.903+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:13:27.916+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:13:27.916+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:13:27.927+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:13:27.926+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:13:27.943+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.099 seconds
+[2024-01-05T21:13:58.257+0100] {processor.py:157} INFO - Started process (PID=74466) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:13:58.284+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:13:58.286+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:13:58.286+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:13:58.314+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:13:58.334+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:13:58.332+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:13:58.354+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:13:58.353+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:13:58.380+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.125 seconds
+[2024-01-05T21:14:33.080+0100] {processor.py:157} INFO - Started process (PID=74481) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:21:34.891+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:21:34.897+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:21:34.896+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:21:34.972+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:21:35.000+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:21:34.999+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:21:35.023+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:21:35.022+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:21:35.071+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.189 seconds
+[2024-01-05T21:22:05.165+0100] {processor.py:157} INFO - Started process (PID=74523) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:22:05.193+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:22:05.195+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:22:05.195+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:22:05.222+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:22:05.236+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:22:05.235+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:22:05.247+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:22:05.247+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:22:05.264+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.101 seconds
+[2024-01-05T21:22:35.439+0100] {processor.py:157} INFO - Started process (PID=74533) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:22:35.467+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:22:35.470+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:22:35.470+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:22:35.509+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:22:35.530+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:22:35.530+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:22:35.543+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:22:35.542+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:22:35.560+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.123 seconds
+[2024-01-05T21:23:05.706+0100] {processor.py:157} INFO - Started process (PID=74542) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:23:05.707+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:23:05.710+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:23:05.710+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:23:05.746+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:23:05.768+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:23:05.767+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:23:05.792+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:23:05.792+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:23:05.821+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.118 seconds
+[2024-01-05T21:23:35.984+0100] {processor.py:157} INFO - Started process (PID=74553) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:23:36.004+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:23:36.007+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:23:36.007+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:23:36.041+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:23:36.120+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:23:36.119+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:23:36.138+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:23:36.138+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:23:36.164+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.182 seconds
+[2024-01-05T21:24:06.266+0100] {processor.py:157} INFO - Started process (PID=74580) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:24:06.294+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:24:06.297+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:24:06.296+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:24:06.329+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:24:06.343+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:24:06.342+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:24:06.356+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:24:06.356+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:24:06.376+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.114 seconds
+[2024-01-05T21:24:36.524+0100] {processor.py:157} INFO - Started process (PID=74582) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:24:36.525+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:24:36.527+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:24:36.527+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:24:36.552+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:24:36.564+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:24:36.564+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:24:36.575+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:24:36.575+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:24:36.591+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.069 seconds
+[2024-01-05T21:25:06.716+0100] {processor.py:157} INFO - Started process (PID=74614) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:25:06.718+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:25:06.720+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:25:06.720+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:25:06.745+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:25:06.797+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:25:06.797+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:25:06.807+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:25:06.807+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:25:06.826+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.112 seconds
+[2024-01-05T21:25:37.007+0100] {processor.py:157} INFO - Started process (PID=74622) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:25:37.034+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:25:37.036+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:25:37.036+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:25:37.062+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:25:37.077+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:25:37.076+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:25:37.090+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:25:37.090+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:25:37.106+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.102 seconds
+[2024-01-05T21:26:07.270+0100] {processor.py:157} INFO - Started process (PID=74629) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:26:07.271+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:26:07.273+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:26:07.273+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:26:07.299+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:26:07.312+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:26:07.312+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:26:07.322+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:26:07.322+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:26:07.339+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.072 seconds
+[2024-01-05T21:26:37.430+0100] {processor.py:157} INFO - Started process (PID=74640) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:26:37.433+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:26:37.435+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:26:37.435+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:26:37.467+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:26:37.523+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:26:37.522+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:26:37.534+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:26:37.533+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:26:37.551+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.124 seconds
+[2024-01-05T21:27:07.690+0100] {processor.py:157} INFO - Started process (PID=74672) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:27:07.717+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:27:07.719+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:27:07.719+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:27:07.747+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:27:07.760+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:27:07.759+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:27:07.771+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:27:07.771+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:27:07.788+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.101 seconds
+[2024-01-05T21:27:37.980+0100] {processor.py:157} INFO - Started process (PID=74679) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:27:37.981+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:27:37.983+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:27:37.983+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:27:38.009+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:27:38.022+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:27:38.021+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:27:38.032+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:27:38.032+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:27:38.048+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.070 seconds
+[2024-01-05T21:28:08.139+0100] {processor.py:157} INFO - Started process (PID=74683) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:28:08.166+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:28:08.168+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:28:08.168+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:28:08.197+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:28:08.210+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:28:08.209+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:28:08.221+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:28:08.221+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:28:08.238+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.101 seconds
+[2024-01-05T21:28:38.398+0100] {processor.py:157} INFO - Started process (PID=74692) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:28:38.426+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:28:38.428+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:28:38.428+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:28:38.453+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:28:38.465+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:28:38.465+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:28:38.475+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:28:38.475+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:28:38.495+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.099 seconds
+[2024-01-05T21:29:08.639+0100] {processor.py:157} INFO - Started process (PID=74700) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:29:08.668+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:29:08.670+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:29:08.669+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:29:08.695+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:29:08.706+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:29:08.706+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:29:08.716+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:29:08.716+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:29:08.737+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.099 seconds
+[2024-01-05T21:29:38.880+0100] {processor.py:157} INFO - Started process (PID=74709) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:29:38.907+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:29:38.910+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:29:38.910+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:29:38.934+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:29:38.946+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:29:38.946+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:29:38.957+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:29:38.956+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:29:38.974+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.096 seconds
+[2024-01-05T21:30:09.042+0100] {processor.py:157} INFO - Started process (PID=74717) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:30:09.069+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:30:09.071+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:30:09.071+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:30:09.100+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:30:09.115+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:30:09.115+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:30:09.126+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:30:09.126+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:30:09.145+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.105 seconds
+[2024-01-05T21:30:39.302+0100] {processor.py:157} INFO - Started process (PID=74724) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:30:39.394+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:30:39.396+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:30:39.395+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:30:39.420+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:30:39.434+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:30:39.434+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:30:39.445+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:30:39.445+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:30:39.463+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.163 seconds
+[2024-01-05T21:31:09.565+0100] {processor.py:157} INFO - Started process (PID=74734) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:31:09.593+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:31:09.595+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:31:09.595+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:31:09.620+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:31:09.632+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:31:09.632+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:31:09.642+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:31:09.642+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:31:09.659+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.097 seconds
+[2024-01-05T21:31:39.725+0100] {processor.py:157} INFO - Started process (PID=74735) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:31:39.726+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:31:39.727+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:31:39.727+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:31:39.754+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:31:39.766+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:31:39.766+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:31:39.777+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:31:39.776+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:31:39.793+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.071 seconds
+[2024-01-05T21:32:09.889+0100] {processor.py:157} INFO - Started process (PID=74743) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:32:09.916+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:32:09.919+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:32:09.919+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:32:09.949+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:32:09.964+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:32:09.963+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:32:09.976+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:32:09.975+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:32:09.994+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.107 seconds
+[2024-01-05T21:32:40.151+0100] {processor.py:157} INFO - Started process (PID=74752) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:32:40.151+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:32:40.153+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:32:40.152+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:32:40.177+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:32:40.188+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:32:40.188+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:32:40.201+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:32:40.201+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:32:40.216+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.067 seconds
+[2024-01-05T21:33:10.309+0100] {processor.py:157} INFO - Started process (PID=74760) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:33:10.336+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:33:10.339+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:33:10.339+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:33:10.366+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:33:10.378+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:33:10.378+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:33:10.390+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:33:10.390+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:33:10.408+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.101 seconds
+[2024-01-05T21:33:40.570+0100] {processor.py:157} INFO - Started process (PID=74767) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:33:40.597+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:33:40.600+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:33:40.599+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:33:40.629+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:33:40.642+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:33:40.642+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:33:40.656+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:33:40.656+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:33:40.675+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.108 seconds
+[2024-01-05T21:34:10.836+0100] {processor.py:157} INFO - Started process (PID=74777) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:34:10.854+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:34:10.857+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:34:10.857+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:34:10.883+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:34:10.896+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:34:10.896+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:34:10.906+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:34:10.906+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:34:10.927+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.093 seconds
+[2024-01-05T21:34:40.997+0100] {processor.py:157} INFO - Started process (PID=74784) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:34:41.025+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:34:41.027+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:34:41.027+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:34:41.055+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:34:41.070+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:34:41.069+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:34:41.081+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:34:41.081+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:34:41.098+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.103 seconds
+[2024-01-05T21:35:11.259+0100] {processor.py:157} INFO - Started process (PID=74789) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:35:11.286+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:35:11.290+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:35:11.289+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:35:11.320+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:35:11.336+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:35:11.335+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:35:11.350+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:35:11.350+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:35:11.366+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.109 seconds
+[2024-01-05T21:35:41.547+0100] {processor.py:157} INFO - Started process (PID=74798) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:35:41.548+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:35:41.549+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:35:41.549+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:35:41.578+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:35:41.593+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:35:41.593+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:35:41.605+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:35:41.605+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:35:41.622+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.078 seconds
+[2024-01-05T21:36:11.708+0100] {processor.py:157} INFO - Started process (PID=74806) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:36:11.736+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:36:11.738+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:36:11.738+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:36:11.763+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:36:11.815+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:36:11.814+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:36:11.826+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:36:11.826+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:36:11.847+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.142 seconds
+[2024-01-05T21:36:42.574+0100] {processor.py:157} INFO - Started process (PID=74834) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:36:42.601+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:36:42.604+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:36:42.604+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:36:42.632+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:36:42.646+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:36:42.646+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:36:42.659+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:36:42.659+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:36:42.675+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.103 seconds
+[2024-01-05T21:37:12.903+0100] {processor.py:157} INFO - Started process (PID=74848) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:37:12.905+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:37:12.906+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:37:12.906+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:37:12.931+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:37:12.944+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:37:12.944+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:37:12.956+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:37:12.956+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:37:12.977+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.076 seconds
+[2024-01-05T21:37:43.096+0100] {processor.py:157} INFO - Started process (PID=74855) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:37:43.098+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:37:43.100+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:37:43.099+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:37:43.124+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:37:43.136+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:37:43.136+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:37:43.147+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:37:43.147+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:37:43.163+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.069 seconds
+[2024-01-05T21:38:18.152+0100] {processor.py:157} INFO - Started process (PID=74884) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:38:18.153+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:38:18.155+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:38:18.154+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:38:18.179+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:38:18.232+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:38:18.232+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:38:18.241+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:38:18.241+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:38:18.259+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.108 seconds
+[2024-01-05T21:38:48.390+0100] {processor.py:157} INFO - Started process (PID=74893) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:38:48.394+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:38:48.396+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:38:48.396+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:38:48.423+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:38:48.437+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:38:48.437+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:38:48.448+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:38:48.448+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:38:48.468+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.080 seconds
+[2024-01-05T21:39:18.841+0100] {processor.py:157} INFO - Started process (PID=74901) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:39:18.868+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:39:18.871+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:39:18.871+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:39:18.898+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:39:18.913+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:39:18.912+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:39:18.925+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:39:18.924+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:39:18.941+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.102 seconds
+[2024-01-05T21:39:49.347+0100] {processor.py:157} INFO - Started process (PID=74904) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:39:49.376+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:39:49.378+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:39:49.378+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:39:49.405+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:39:49.419+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:39:49.419+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:39:49.430+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:39:49.430+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:39:49.446+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.101 seconds
+[2024-01-05T21:40:19.895+0100] {processor.py:157} INFO - Started process (PID=74913) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:40:19.898+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:40:19.900+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:40:19.900+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:40:19.927+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:40:19.941+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:40:19.940+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:40:19.951+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:40:19.951+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:40:19.970+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.077 seconds
+[2024-01-05T21:40:50.257+0100] {processor.py:157} INFO - Started process (PID=74920) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:40:50.274+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:40:50.276+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:40:50.276+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:40:50.303+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:40:50.317+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:40:50.317+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:40:50.329+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:40:50.329+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:40:50.347+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.093 seconds
+[2024-01-05T21:41:20.670+0100] {processor.py:157} INFO - Started process (PID=74930) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:41:20.698+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:41:20.700+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:41:20.700+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:41:20.727+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:41:20.741+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:41:20.741+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:41:20.754+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:41:20.753+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:41:20.768+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.101 seconds
+[2024-01-05T21:41:51.233+0100] {processor.py:157} INFO - Started process (PID=74937) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:41:51.234+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:41:51.236+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:41:51.236+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:41:51.263+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:41:51.275+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:41:51.275+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:41:51.289+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:41:51.288+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:41:51.304+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.073 seconds
+[2024-01-05T21:42:21.636+0100] {processor.py:157} INFO - Started process (PID=74945) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:42:21.638+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:42:21.639+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:42:21.639+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:42:21.671+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:42:21.685+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:42:21.684+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:42:21.698+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:42:21.697+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:42:21.714+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.080 seconds
+[2024-01-05T21:42:52.019+0100] {processor.py:157} INFO - Started process (PID=74956) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:42:52.027+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:42:52.029+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:42:52.029+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:42:52.054+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:42:52.068+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:42:52.068+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:42:52.081+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:42:52.080+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:42:52.096+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.079 seconds
+[2024-01-05T21:43:22.427+0100] {processor.py:157} INFO - Started process (PID=74958) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:43:22.455+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:43:22.457+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:43:22.457+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:43:22.482+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:43:22.496+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:43:22.495+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:43:22.506+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:43:22.506+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:43:22.522+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.098 seconds
+[2024-01-05T21:43:56.214+0100] {processor.py:157} INFO - Started process (PID=74990) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:43:56.215+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:43:56.216+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:43:56.216+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:43:56.239+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:43:56.289+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:43:56.288+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:43:56.299+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:43:56.299+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:43:56.317+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.104 seconds
+[2024-01-05T21:44:26.437+0100] {processor.py:157} INFO - Started process (PID=74998) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:44:26.439+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:44:26.441+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:44:26.441+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:44:26.467+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:44:26.481+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:44:26.480+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:44:26.491+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:44:26.491+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:44:26.507+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.072 seconds
+[2024-01-05T21:44:56.828+0100] {processor.py:157} INFO - Started process (PID=75005) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:44:56.856+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:44:56.858+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:44:56.858+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:44:56.887+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:44:56.900+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:44:56.900+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:44:56.911+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:44:56.911+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:44:56.927+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.101 seconds
+[2024-01-05T21:45:27.367+0100] {processor.py:157} INFO - Started process (PID=75018) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:45:27.395+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:45:27.396+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:45:27.396+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:45:27.419+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:45:27.430+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:45:27.430+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:45:27.441+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:45:27.440+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:45:27.455+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.089 seconds
+[2024-01-05T21:45:57.544+0100] {processor.py:157} INFO - Started process (PID=75025) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:45:57.571+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:45:57.573+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:45:57.573+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:45:57.600+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:45:57.613+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:45:57.612+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:45:57.625+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:45:57.625+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:45:57.642+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.100 seconds
+[2024-01-05T21:46:28.275+0100] {processor.py:157} INFO - Started process (PID=75033) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:46:28.280+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:46:28.282+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:46:28.282+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:46:28.305+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:46:28.315+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:46:28.315+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:46:28.326+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:46:28.326+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:46:28.341+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.067 seconds
+[2024-01-05T21:46:58.650+0100] {processor.py:157} INFO - Started process (PID=75044) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:46:58.652+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:46:58.654+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:46:58.654+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:46:58.679+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:46:58.693+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:46:58.692+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:46:58.703+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:46:58.703+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:46:58.719+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.071 seconds
+[2024-01-05T21:47:28.830+0100] {processor.py:157} INFO - Started process (PID=75046) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:47:28.857+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:47:28.860+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:47:28.859+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:47:28.889+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:47:28.905+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:47:28.905+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:47:28.918+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:47:28.918+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:47:28.936+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.108 seconds
+[2024-01-05T21:47:59.378+0100] {processor.py:157} INFO - Started process (PID=75053) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:47:59.378+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:47:59.380+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:47:59.380+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:47:59.404+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:47:59.415+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:47:59.415+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:47:59.424+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:47:59.424+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:47:59.437+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.061 seconds
+[2024-01-05T21:48:29.791+0100] {processor.py:157} INFO - Started process (PID=75063) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:48:29.819+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:48:29.821+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:48:29.820+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:48:29.848+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:48:29.862+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:48:29.861+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:48:29.874+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:48:29.874+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:48:29.893+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.105 seconds
+[2024-01-05T21:49:16.786+0100] {processor.py:157} INFO - Started process (PID=75098) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:49:16.787+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:49:16.789+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:49:16.788+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:49:16.811+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:49:16.861+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:49:16.861+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:49:16.871+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:49:16.871+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:49:16.887+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.103 seconds
+[2024-01-05T21:49:47.056+0100] {processor.py:157} INFO - Started process (PID=75101) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:49:47.057+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:49:47.060+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:49:47.059+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:49:47.096+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:49:47.112+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:49:47.111+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:49:47.127+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:49:47.127+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:49:47.147+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.093 seconds
+[2024-01-05T21:50:17.450+0100] {processor.py:157} INFO - Started process (PID=75112) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:50:17.478+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:50:17.480+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:50:17.480+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:50:17.508+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:50:17.521+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:50:17.520+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:50:17.532+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:50:17.531+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:50:17.548+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.100 seconds
+[2024-01-05T21:50:47.977+0100] {processor.py:157} INFO - Started process (PID=75119) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:50:47.978+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:50:47.980+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:50:47.980+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:50:48.007+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:50:48.020+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:50:48.020+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:50:48.031+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:50:48.031+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:50:48.050+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.075 seconds
+[2024-01-05T21:51:18.099+0100] {processor.py:157} INFO - Started process (PID=75129) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:51:18.126+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:51:18.129+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:51:18.129+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:51:18.165+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:51:18.189+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:51:18.188+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:51:18.210+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:51:18.209+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:51:18.237+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.141 seconds
+[2024-01-05T21:51:48.730+0100] {processor.py:157} INFO - Started process (PID=75136) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:51:48.747+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:51:48.749+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:51:48.749+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:51:48.776+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:51:48.790+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:51:48.790+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:51:48.800+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:51:48.800+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:51:48.816+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.088 seconds
+[2024-01-05T21:52:19.124+0100] {processor.py:157} INFO - Started process (PID=75146) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:52:19.125+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:52:19.127+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:52:19.126+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:52:19.153+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:52:19.164+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:52:19.163+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:52:19.174+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:52:19.174+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:52:19.187+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.065 seconds
+[2024-01-05T21:52:49.391+0100] {processor.py:157} INFO - Started process (PID=75153) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:52:49.418+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:52:49.421+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:52:49.421+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:52:49.447+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:52:49.459+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:52:49.459+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:52:49.470+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:52:49.470+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:52:49.487+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.098 seconds
+[2024-01-05T21:53:20.048+0100] {processor.py:157} INFO - Started process (PID=75155) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:53:20.078+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:53:20.080+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:53:20.080+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:53:20.109+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:53:20.122+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:53:20.121+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:53:20.133+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:53:20.132+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:53:20.149+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.102 seconds
+[2024-01-05T21:53:50.576+0100] {processor.py:157} INFO - Started process (PID=75164) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:53:50.579+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:53:50.582+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:53:50.581+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:53:50.607+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:53:50.618+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:53:50.618+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:53:50.629+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:53:50.629+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:53:50.651+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.077 seconds
+[2024-01-05T21:54:20.692+0100] {processor.py:157} INFO - Started process (PID=75172) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:54:20.720+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:54:20.722+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:54:20.722+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:54:20.754+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:54:20.774+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:54:20.773+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:54:20.793+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:54:20.792+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:54:20.812+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.122 seconds
+[2024-01-05T21:54:51.313+0100] {processor.py:157} INFO - Started process (PID=75179) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:54:51.314+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:54:51.317+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:54:51.316+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:54:51.342+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:54:51.354+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:54:51.354+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:54:51.365+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:54:51.365+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:54:51.381+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.070 seconds
+[2024-01-05T21:55:21.820+0100] {processor.py:157} INFO - Started process (PID=75192) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:55:21.823+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:55:21.824+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:55:21.824+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:55:21.850+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:55:21.864+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:55:21.863+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:55:21.878+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:55:21.877+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:55:21.893+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.075 seconds
+[2024-01-05T21:55:51.970+0100] {processor.py:157} INFO - Started process (PID=75199) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:55:51.972+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:55:51.974+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:55:51.974+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:55:51.998+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:55:52.012+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:55:52.011+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:55:52.021+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:55:52.021+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:55:52.041+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.072 seconds
+[2024-01-05T21:56:22.699+0100] {processor.py:157} INFO - Started process (PID=75209) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:56:22.727+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:56:22.730+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:56:22.730+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:56:22.758+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:56:22.771+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:56:22.771+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:56:22.783+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:56:22.782+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:56:22.799+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.102 seconds
+[2024-01-05T21:56:53.228+0100] {processor.py:157} INFO - Started process (PID=75216) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:56:53.255+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:56:53.257+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:56:53.257+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:56:53.285+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:56:53.297+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:56:53.297+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:56:53.309+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:56:53.308+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:56:53.326+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.100 seconds
+[2024-01-05T21:57:23.662+0100] {processor.py:157} INFO - Started process (PID=75218) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:57:23.689+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:57:23.692+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:57:23.691+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:57:23.718+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:57:23.731+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:57:23.731+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:57:23.743+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:57:23.742+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:57:23.761+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.101 seconds
+[2024-01-05T21:57:54.165+0100] {processor.py:157} INFO - Started process (PID=75227) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:57:54.193+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:57:54.195+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:57:54.194+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:57:54.221+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:57:54.233+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:57:54.232+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:57:54.245+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:57:54.245+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:57:54.260+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.097 seconds
+[2024-01-05T21:58:24.590+0100] {processor.py:157} INFO - Started process (PID=75235) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:58:24.617+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:58:24.620+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:58:24.620+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:58:24.647+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:58:24.660+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:58:24.660+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:58:24.673+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:58:24.673+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:58:24.691+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.104 seconds
+[2024-01-05T21:58:55.162+0100] {processor.py:157} INFO - Started process (PID=75242) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:58:55.163+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:58:55.165+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:58:55.165+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:58:55.191+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:58:55.206+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:58:55.204+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:58:55.217+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:58:55.217+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:58:55.232+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.073 seconds
+[2024-01-05T21:59:25.529+0100] {processor.py:157} INFO - Started process (PID=75252) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:59:25.531+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:59:25.533+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:59:25.533+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:59:25.563+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:59:25.578+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:59:25.577+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:59:25.589+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:59:25.589+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:59:25.607+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.080 seconds
+[2024-01-05T21:59:55.909+0100] {processor.py:157} INFO - Started process (PID=75259) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:59:55.937+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T21:59:55.939+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:59:55.938+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:59:55.965+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T21:59:55.977+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:59:55.977+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T21:59:55.987+0100] {logging_mixin.py:154} INFO - [2024-01-05T21:59:55.987+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T21:59:56.003+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.095 seconds
+[2024-01-05T22:00:26.312+0100] {processor.py:157} INFO - Started process (PID=75270) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:00:26.385+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:00:26.386+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:00:26.386+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:00:26.411+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:00:26.422+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:00:26.422+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:00:26.433+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:00:26.433+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:00:26.448+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.138 seconds
+[2024-01-05T22:00:56.883+0100] {processor.py:157} INFO - Started process (PID=75271) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:00:56.884+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:00:56.886+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:00:56.886+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:00:56.913+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:00:56.926+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:00:56.925+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:00:56.937+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:00:56.936+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:00:56.954+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.074 seconds
+[2024-01-05T22:01:27.248+0100] {processor.py:157} INFO - Started process (PID=75279) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:01:27.275+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:01:27.277+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:01:27.277+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:01:27.306+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:01:27.319+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:01:27.318+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:01:27.330+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:01:27.330+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:01:27.347+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.101 seconds
+[2024-01-05T22:01:57.855+0100] {processor.py:157} INFO - Started process (PID=75288) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:01:57.883+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:01:57.886+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:01:57.886+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:01:57.933+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:01:57.954+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:01:57.953+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:01:57.975+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:01:57.975+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:01:57.999+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.148 seconds
+[2024-01-05T22:02:28.383+0100] {processor.py:157} INFO - Started process (PID=75296) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:02:28.410+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:02:28.414+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:02:28.413+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:02:28.466+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:02:28.493+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:02:28.492+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:02:28.519+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:02:28.519+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:02:28.569+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.190 seconds
+[2024-01-05T22:02:58.988+0100] {processor.py:157} INFO - Started process (PID=75303) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:02:58.990+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:02:58.992+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:02:58.992+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:02:59.041+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:02:59.065+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:02:59.063+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:02:59.086+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:02:59.085+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:02:59.109+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.124 seconds
+[2024-01-05T22:03:29.361+0100] {processor.py:157} INFO - Started process (PID=75311) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:03:29.388+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:03:29.391+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:03:29.391+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:03:29.443+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:03:29.470+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:03:29.469+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:03:29.495+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:03:29.495+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:03:29.547+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.189 seconds
+[2024-01-05T22:03:59.695+0100] {processor.py:157} INFO - Started process (PID=75320) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:03:59.723+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:03:59.726+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:03:59.725+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:03:59.775+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:03:59.796+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:03:59.795+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:03:59.814+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:03:59.814+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:03:59.842+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.150 seconds
+[2024-01-05T22:04:30.026+0100] {processor.py:157} INFO - Started process (PID=75328) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:04:30.029+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:04:30.033+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:04:30.032+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:04:30.080+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:04:30.101+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:04:30.100+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:04:30.122+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:04:30.122+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:04:30.146+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.123 seconds
+[2024-01-05T22:05:00.357+0100] {processor.py:157} INFO - Started process (PID=75329) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:05:00.385+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:05:00.387+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:05:00.387+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:05:00.434+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:05:00.456+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:05:00.455+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:05:00.478+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:05:00.477+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:05:00.506+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.153 seconds
+[2024-01-05T22:05:30.689+0100] {processor.py:157} INFO - Started process (PID=75340) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:05:30.718+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:05:30.721+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:05:30.721+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:05:30.768+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:05:30.788+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:05:30.787+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:05:30.810+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:05:30.810+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:05:30.838+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.151 seconds
+[2024-01-05T22:06:01.046+0100] {processor.py:157} INFO - Started process (PID=75347) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:06:01.074+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:06:01.077+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:06:01.076+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:06:01.127+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:06:01.149+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:06:01.148+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:06:01.170+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:06:01.170+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:06:01.197+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.154 seconds
+[2024-01-05T22:06:31.382+0100] {processor.py:157} INFO - Started process (PID=75357) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:06:31.410+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:06:31.413+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:06:31.413+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:06:31.467+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:06:31.493+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:06:31.492+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:06:31.517+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:06:31.517+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:06:31.571+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.193 seconds
+[2024-01-05T22:07:01.730+0100] {processor.py:157} INFO - Started process (PID=75364) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:07:01.758+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:07:01.760+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:07:01.760+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:07:01.811+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:07:01.833+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:07:01.832+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:07:01.853+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:07:01.853+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:07:01.906+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.180 seconds
+[2024-01-05T22:07:31.946+0100] {processor.py:157} INFO - Started process (PID=75372) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:07:31.973+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:07:31.976+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:07:31.976+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:07:32.023+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:07:32.045+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:07:32.045+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:07:32.066+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:07:32.066+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:07:32.094+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.151 seconds
+[2024-01-05T22:08:02.278+0100] {processor.py:157} INFO - Started process (PID=75379) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:08:02.280+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:08:02.282+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:08:02.282+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:08:02.332+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:08:02.353+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:08:02.352+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:08:02.376+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:08:02.375+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:08:02.398+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.122 seconds
+[2024-01-05T22:08:32.615+0100] {processor.py:157} INFO - Started process (PID=75383) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:08:32.617+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:08:32.620+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:08:32.619+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:08:32.668+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:08:32.688+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:08:32.688+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:08:32.707+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:08:32.707+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:08:32.734+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.122 seconds
+[2024-01-05T22:09:02.973+0100] {processor.py:157} INFO - Started process (PID=75390) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:09:02.975+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:09:02.978+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:09:02.978+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:09:03.044+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:09:03.075+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:09:03.074+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:09:03.097+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:09:03.097+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:09:03.121+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.159 seconds
+[2024-01-05T22:09:33.303+0100] {processor.py:157} INFO - Started process (PID=75398) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:09:33.330+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:09:33.334+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:09:33.333+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:09:33.385+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:09:33.410+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:09:33.409+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:09:33.434+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:09:33.434+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:09:33.486+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.187 seconds
+[2024-01-05T22:10:03.642+0100] {processor.py:157} INFO - Started process (PID=75406) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:10:03.670+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:10:03.673+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:10:03.673+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:10:03.735+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:10:03.763+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:10:03.762+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:10:03.788+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:10:03.788+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:10:03.842+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.205 seconds
+[2024-01-05T22:10:34.087+0100] {processor.py:157} INFO - Started process (PID=75414) to work on /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:10:34.116+0100] {processor.py:829} INFO - Processing file /home/igor/airflow-snowflake/dags/deploy.py for tasks to queue
+[2024-01-05T22:10:34.118+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:10:34.118+0100] {dagbag.py:536} INFO - Filling up the DagBag from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:10:34.165+0100] {processor.py:839} INFO - DAG(s) dict_keys(['deploy_dag']) retrieved from /home/igor/airflow-snowflake/dags/deploy.py
+[2024-01-05T22:10:34.186+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:10:34.185+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-05T22:10:34.207+0100] {logging_mixin.py:154} INFO - [2024-01-05T22:10:34.207+0100] {dag.py:3722} INFO - Setting next_dagrun for deploy_dag to None, run_after=None
+[2024-01-05T22:10:34.231+0100] {processor.py:179} INFO - Processing /home/igor/airflow-snowflake/dags/deploy.py took 0.147 seconds

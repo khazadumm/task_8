@@ -1,0 +1,153 @@
+[2024-01-08T11:28:31.026+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_dag.wait_for_add_file manual__2024-01-08T10:28:28.569573+00:00 [queued]>
+[2024-01-08T11:28:31.030+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_dag.wait_for_add_file manual__2024-01-08T10:28:28.569573+00:00 [queued]>
+[2024-01-08T11:28:31.030+0100] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-01-08T11:28:31.041+0100] {taskinstance.py:1382} INFO - Executing <Task(SqlSensor): wait_for_add_file> on 2024-01-08 10:28:28.569573+00:00
+[2024-01-08T11:28:31.044+0100] {standard_task_runner.py:57} INFO - Started process 83272 to run task
+[2024-01-08T11:28:31.045+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'load_data_dag', 'wait_for_add_file', 'manual__2024-01-08T10:28:28.569573+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/load_data.py', '--cfg-path', '/tmp/tmppzbz6iel']
+[2024-01-08T11:28:31.047+0100] {standard_task_runner.py:85} INFO - Job 21: Subtask wait_for_add_file
+[2024-01-08T11:28:31.068+0100] {task_command.py:416} INFO - Running <TaskInstance: load_data_dag.wait_for_add_file manual__2024-01-08T10:28:28.569573+00:00 [running]> on host DESKTOP-9ILQL7F.
+[2024-01-08T11:28:31.127+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='load_data_dag' AIRFLOW_CTX_TASK_ID='wait_for_add_file' AIRFLOW_CTX_EXECUTION_DATE='2024-01-08T10:28:28.569573+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-08T10:28:28.569573+00:00'
+[2024-01-08T11:28:31.131+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:28:31.284+0100] {sql.py:95} INFO - Poking: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T); (with parameters None)
+[2024-01-08T11:28:31.287+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:28:31.287+0100] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.12, Platform: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[2024-01-08T11:28:31.287+0100] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-01-08T11:28:31.849+0100] {cursor.py:1028} INFO - query: [ALTER SESSION SET autocommit=False]
+[2024-01-08T11:28:31.984+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:28:31.985+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:28:31.985+0100] {sql.py:450} INFO - Running statement: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T);, parameters: None
+[2024-01-08T11:28:31.985+0100] {cursor.py:1028} INFO - query: [SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOU...]
+[2024-01-08T11:28:32.380+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:28:32.381+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:28:32.381+0100] {sql.py:459} INFO - Rows affected: 1
+[2024-01-08T11:28:32.381+0100] {snowflake.py:400} INFO - Rows affected: 1
+[2024-01-08T11:28:32.381+0100] {snowflake.py:401} INFO - Snowflake query id: 01b187b4-0000-50da-0000-00003fbda469
+[2024-01-08T11:28:32.381+0100] {cursor.py:1028} INFO - query: [COMMIT]
+[2024-01-08T11:28:32.493+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:28:32.493+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:28:32.494+0100] {connection.py:718} INFO - closed
+[2024-01-08T11:28:32.568+0100] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2024-01-08T11:28:42.683+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:28:42.684+0100] {sql.py:95} INFO - Poking: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T); (with parameters None)
+[2024-01-08T11:28:42.685+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:28:42.685+0100] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.12, Platform: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[2024-01-08T11:28:42.685+0100] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-01-08T11:28:43.213+0100] {cursor.py:1028} INFO - query: [ALTER SESSION SET autocommit=False]
+[2024-01-08T11:28:43.324+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:28:43.324+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:28:43.325+0100] {sql.py:450} INFO - Running statement: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T);, parameters: None
+[2024-01-08T11:28:43.325+0100] {cursor.py:1028} INFO - query: [SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOU...]
+[2024-01-08T11:28:43.627+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:28:43.627+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:28:43.628+0100] {sql.py:459} INFO - Rows affected: 1
+[2024-01-08T11:28:43.628+0100] {snowflake.py:400} INFO - Rows affected: 1
+[2024-01-08T11:28:43.628+0100] {snowflake.py:401} INFO - Snowflake query id: 01b187b4-0000-50db-0000-00003fbdb225
+[2024-01-08T11:28:43.628+0100] {cursor.py:1028} INFO - query: [COMMIT]
+[2024-01-08T11:28:43.714+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:28:43.715+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:28:43.715+0100] {connection.py:718} INFO - closed
+[2024-01-08T11:28:43.770+0100] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2024-01-08T11:28:53.867+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:28:53.868+0100] {sql.py:95} INFO - Poking: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T); (with parameters None)
+[2024-01-08T11:28:53.869+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:28:53.869+0100] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.12, Platform: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[2024-01-08T11:28:53.869+0100] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-01-08T11:28:54.313+0100] {cursor.py:1028} INFO - query: [ALTER SESSION SET autocommit=False]
+[2024-01-08T11:28:54.427+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:28:54.427+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:28:54.427+0100] {sql.py:450} INFO - Running statement: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T);, parameters: None
+[2024-01-08T11:28:54.427+0100] {cursor.py:1028} INFO - query: [SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOU...]
+[2024-01-08T11:28:54.753+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:28:54.754+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:28:54.754+0100] {sql.py:459} INFO - Rows affected: 1
+[2024-01-08T11:28:54.754+0100] {snowflake.py:400} INFO - Rows affected: 1
+[2024-01-08T11:28:54.754+0100] {snowflake.py:401} INFO - Snowflake query id: 01b187b4-0000-50db-0000-00003fbdb22d
+[2024-01-08T11:28:54.754+0100] {cursor.py:1028} INFO - query: [COMMIT]
+[2024-01-08T11:28:54.858+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:28:54.858+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:28:54.858+0100] {connection.py:718} INFO - closed
+[2024-01-08T11:28:54.910+0100] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2024-01-08T11:29:05.012+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:29:05.013+0100] {sql.py:95} INFO - Poking: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T); (with parameters None)
+[2024-01-08T11:29:05.014+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:29:05.015+0100] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.12, Platform: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[2024-01-08T11:29:05.015+0100] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-01-08T11:29:05.576+0100] {cursor.py:1028} INFO - query: [ALTER SESSION SET autocommit=False]
+[2024-01-08T11:29:05.704+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:05.705+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:05.705+0100] {sql.py:450} INFO - Running statement: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T);, parameters: None
+[2024-01-08T11:29:05.705+0100] {cursor.py:1028} INFO - query: [SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOU...]
+[2024-01-08T11:29:06.020+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:06.021+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:06.021+0100] {sql.py:459} INFO - Rows affected: 1
+[2024-01-08T11:29:06.021+0100] {snowflake.py:400} INFO - Rows affected: 1
+[2024-01-08T11:29:06.022+0100] {snowflake.py:401} INFO - Snowflake query id: 01b187b5-0000-50db-0000-00003fbdb231
+[2024-01-08T11:29:06.022+0100] {cursor.py:1028} INFO - query: [COMMIT]
+[2024-01-08T11:29:06.139+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:06.140+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:06.140+0100] {connection.py:718} INFO - closed
+[2024-01-08T11:29:06.192+0100] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2024-01-08T11:29:16.301+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:29:16.301+0100] {sql.py:95} INFO - Poking: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T); (with parameters None)
+[2024-01-08T11:29:16.303+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:29:16.303+0100] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.12, Platform: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[2024-01-08T11:29:16.303+0100] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-01-08T11:29:17.009+0100] {cursor.py:1028} INFO - query: [ALTER SESSION SET autocommit=False]
+[2024-01-08T11:29:17.168+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:17.169+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:17.169+0100] {sql.py:450} INFO - Running statement: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T);, parameters: None
+[2024-01-08T11:29:17.169+0100] {cursor.py:1028} INFO - query: [SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOU...]
+[2024-01-08T11:29:17.621+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:17.621+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:17.621+0100] {sql.py:459} INFO - Rows affected: 1
+[2024-01-08T11:29:17.621+0100] {snowflake.py:400} INFO - Rows affected: 1
+[2024-01-08T11:29:17.621+0100] {snowflake.py:401} INFO - Snowflake query id: 01b187b5-0000-50db-0000-00003fbdb239
+[2024-01-08T11:29:17.622+0100] {cursor.py:1028} INFO - query: [COMMIT]
+[2024-01-08T11:29:17.738+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:17.739+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:17.739+0100] {connection.py:718} INFO - closed
+[2024-01-08T11:29:17.819+0100] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2024-01-08T11:29:27.931+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:29:27.931+0100] {sql.py:95} INFO - Poking: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T); (with parameters None)
+[2024-01-08T11:29:27.932+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:29:27.933+0100] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.12, Platform: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[2024-01-08T11:29:27.933+0100] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-01-08T11:29:28.552+0100] {cursor.py:1028} INFO - query: [ALTER SESSION SET autocommit=False]
+[2024-01-08T11:29:29.127+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:29.128+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:29.128+0100] {sql.py:450} INFO - Running statement: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T);, parameters: None
+[2024-01-08T11:29:29.128+0100] {cursor.py:1028} INFO - query: [SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOU...]
+[2024-01-08T11:29:29.747+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:29.747+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:29.747+0100] {sql.py:459} INFO - Rows affected: 1
+[2024-01-08T11:29:29.747+0100] {snowflake.py:400} INFO - Rows affected: 1
+[2024-01-08T11:29:29.747+0100] {snowflake.py:401} INFO - Snowflake query id: 01b187b5-0000-50db-0000-00003fbdb241
+[2024-01-08T11:29:29.748+0100] {cursor.py:1028} INFO - query: [COMMIT]
+[2024-01-08T11:29:30.141+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:30.141+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:30.141+0100] {connection.py:718} INFO - closed
+[2024-01-08T11:29:30.545+0100] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2024-01-08T11:29:40.982+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:29:40.983+0100] {sql.py:95} INFO - Poking: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T); (with parameters None)
+[2024-01-08T11:29:40.985+0100] {base.py:73} INFO - Using connection ID 'snowflake_conn' for task execution.
+[2024-01-08T11:29:40.985+0100] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.12, Platform: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[2024-01-08T11:29:40.985+0100] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-01-08T11:29:41.501+0100] {cursor.py:1028} INFO - query: [ALTER SESSION SET autocommit=False]
+[2024-01-08T11:29:41.631+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:41.631+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:41.631+0100] {sql.py:450} INFO - Running statement: SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOURCE_CSV_STAGE T);, parameters: None
+[2024-01-08T11:29:41.631+0100] {cursor.py:1028} INFO - query: [SELECT EXISTS(SELECT DISTINCT  METADATA$FILENAME FROM @TASK_8.STAGING_SCHEMA.SOU...]
+[2024-01-08T11:29:42.042+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:42.042+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:42.042+0100] {sql.py:459} INFO - Rows affected: 1
+[2024-01-08T11:29:42.043+0100] {snowflake.py:400} INFO - Rows affected: 1
+[2024-01-08T11:29:42.043+0100] {snowflake.py:401} INFO - Snowflake query id: 01b187b5-0000-50da-0000-00003fbda49d
+[2024-01-08T11:29:42.043+0100] {cursor.py:1028} INFO - query: [COMMIT]
+[2024-01-08T11:29:42.175+0100] {cursor.py:1041} INFO - query execution done
+[2024-01-08T11:29:42.176+0100] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2024-01-08T11:29:42.176+0100] {connection.py:718} INFO - closed
+[2024-01-08T11:29:42.254+0100] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2024-01-08T11:29:42.348+0100] {base.py:287} INFO - Success criteria met. Exiting.
+[2024-01-08T11:29:42.352+0100] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=load_data_dag, task_id=wait_for_add_file, execution_date=20240108T102828, start_date=20240108T102831, end_date=20240108T102942
+[2024-01-08T11:29:42.422+0100] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-01-08T11:29:42.434+0100] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
